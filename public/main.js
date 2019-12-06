@@ -40,3 +40,4 @@ function renderHTML(data){
 
     trial.innerHTML = names;
 }
+

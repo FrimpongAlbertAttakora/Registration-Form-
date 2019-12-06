@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+#try {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#try p{
+    margin-left: 2rem;
+}
+
+#heads {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#heads p{
+    margin-left: 2rem;
+    font-weight: bold;
+}

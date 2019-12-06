@@ -1,0 +1,24 @@
+{
+  "name": "jecadohostelregistrationformwithexpress",
+  "version": "1.0.0",
+  "description": "A registration form for Jecado Hostel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "Registration",
+    "form"
+  ],
+  "author": "Albert Attakora Frimpong",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}

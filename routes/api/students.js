@@ -29,8 +29,8 @@ router.post('/', (req, res) => {
     }
  
     students.push(newStudent);
-    //res.json(students);
-    res.redirect('/');
+    res.json(students);
+    //res.redirect('/');
  });
 
 

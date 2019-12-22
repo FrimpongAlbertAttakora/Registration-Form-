@@ -2,7 +2,7 @@
 var trial = document.getElementById('try');
 
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'http://localhost:2300/api/students');
+ourRequest.open('GET', 'http://localhost:2100/api/students');
 ourRequest.onload = function(){
     var ourData = JSON.parse(ourRequest.responseText);
     console.log(ourData);

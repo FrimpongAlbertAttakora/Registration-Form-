@@ -1,22 +1,55 @@
-h1 {
-    text-align: center;
+*{
+    font-family: sans-serif;
 }
 
+h3 {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: #feca57;
+}
 #try {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
 #try p{
     margin-left: 2rem;
 }
-
 #heads {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
 #heads p{
     margin-left: 2rem;
     font-weight: bold;
 }
+.big-banner{
+    background-image: url('images/myPic\ \(2\).jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    overflow-x: hidden;
+}
+body {
+    background-color: #ffeaa7;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', serif;
+}
+#form_submit {
+    margin-top: 40vh;
+    font-weight: bolder;
+}
+#print_info {
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold ;
+    margin: 1rem;
+}
+

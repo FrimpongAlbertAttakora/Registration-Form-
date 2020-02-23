@@ -5,11 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
     <title>Registration Form</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"><h1 class="text-dark">JECADO HOSTEL</h1></div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">JH</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="rooms.html">ROOMS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="photos.html">PHOTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="form.html">REGISTER</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    <div id="print_info">
+        <p> 
+            To be fully deemed registered, an applicant must complete 
+            the form online, print and submit signed hard copy of the form
+            to the hostel manager.  
+        </p>
+        <p>
+            <a href="/CV.pdf">Click to download</a>
+        </p>
+    </div>
+
     <div class="container my-4 bg-light">
-        <h1 class="text-center text-info display-4 my-3">JECADO HOSTEL REGISTRATION FORM</h1>
+        <h1 class="text-center text-info display-4 my-3">ONLINE REGISTRATION FORM</h1>
         <div>
             <form action="/api/students" method="post" class="was-validated shadow font-weight-bold" >
                 <div class="form-group mx-3">
@@ -43,6 +90,7 @@
                 <div class="text-center"><input type="submit" value="Submit Form" class="btn btn-primary mt-4 mb-5"></div>
             </form>
         </div>
+    </div>
     </div>
 </body>
 </html>

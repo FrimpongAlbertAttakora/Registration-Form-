@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-
 const Student = require('../models/Student');
+
 
 // Gets all Members 
 //GET BACK ALL THE POSTS
@@ -23,8 +23,8 @@ router.post('/', async (req, res) => {
         program: req.body.program,
     });
     try{
-    const savedStudent = await student.save()
-    res.json(savedStudent);
+    const savedStudent = await student.save();
+    res.redirect('/submit.html')
     }catch(err){
         res.json({message: err});
     }
@@ -42,7 +42,29 @@ router.get('/:studentId', async (req, res) => {
 });
 
 
+//UPDATE A STUDENT
+router.patch('/:studentId', async (req, res) => {
+    try{
+    const updatedStudent = await Student.updateOne({ _id: req.params.studentId }, 
+        {
+            $set: { name: req.body.name }
+        });
+        res.json(updatedStudent);
+            }catch (err) {
+                res.json({ message: err });
+    }
+});
+
+
+//DELETE A STUDENT
+router.delete('/:studentId', async (req, res) => {
+    try{
+        const removedStudent = await Student.remove({ _id: req.params.studentId });
+        res.json(removedStudent);
+    }catch (err) {
+        res.json({ message: err });
+    }
+});
 
 
  module.exports = router;
-

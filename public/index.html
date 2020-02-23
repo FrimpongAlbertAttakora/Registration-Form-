@@ -4,9 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>         
+    <title>Jecado Hostel</title>
 </head>
 <body>
-    <h1>Thank You for your registration at Jecado Hostel</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"><h1 class="text-dark">JECADO HOSTEL</h1></div>
+        </div>
+        <div>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">JH</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="rooms.html">ROOMS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="photos.html">PHOTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="form.html">REGISTER</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <div class="jumbotron big-banner" style="height: 100vh; width: auto;">
+        <h1 class="display-4 mt-2">WELCOME TO JECADO HOSTEL</h1>
+        </div>
+                
+        <div class="row mt-5">
+          <div class="col-lg-2 col-1"></div>
+          <div class="col-lg-3 col-10 jumbotron big-banner" style="height: 50vh; width: auto;"></div>
+          <div class="col-lg-5 col-0 mx-4">
+            <h2>JECADO HOSTEL, OFF-CAMPUS</h2>
+            <p>
+            Lorem, ipsum dolor sit ame consectetur adipisicing elit. Non, nostrum alias facere accusantium laudantium repellat aliquam delectus iure eaque tenetur quam culpa aliquid? Provident, temporibus? Ex natus mollitia ut unde?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, facilis praesentium quisquam aliquam, deleniti nesciunt in optio quaerat esse temporibus sequi! Voluptatum illo officia dicta quos nam. Iure, optio repudiandae?
+            </p>
+          </div>
+          <div class="col-lg-2 col-1"></div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-2 col-1"></div>
+          <div class="col-lg-3 col-10 jumbotron big-banner" style="height: 50vh; width: auto;"></div>
+          <div class="col-lg-5 col-0 mx-4">
+            <h2>ROOMS</h2>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, nostrum alias facere accusantium laudantium repellat aliquam delectus iure eaque tenetur quam culpa aliquid? Provident, temporibus? Ex natus mollitia ut unde?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, facilis praesentium quisquam aliquam, deleniti nesciunt in optio quaerat esse temporibus sequi! Voluptatum illo officia dicta quos nam. Iure, optio repudiandae?
+            </p>
+          </div>
+          <div class="col-lg-2 col-1"></div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-2 col-1"></div>
+          <div class="col-lg-3 col-10 jumbotron big-banner" style="height: 50vh; width: auto;"></div>
+          <div class="col-lg-5 col-0 mx-4">
+            <h2>BUILDING</h2>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, nostrum alias facere accusantium laudantium repellat aliquam delectus iure eaque tenetur quam culpa aliquid? Provident, temporibus? Ex natus mollitia ut unde?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, facilis praesentium quisquam aliquam, deleniti nesciunt in optio quaerat esse temporibus sequi! Voluptatum illo officia dicta quos nam. Iure, optio repudiandae?
+            </p>
+          </div>
+          <div class="col-lg-2 col-1"></div>
+        </div>
+       
+        <div>
+        <h3>OUR SERVICES</h3>
+        <div class="row mt-5 mb-5 mx-4">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-2">Barbering Shop</div>
+          <div class="col-lg-2">Hair Salon</div>
+          <div class="col-lg-2">Common Room</div>
+          <div class="col-lg-2">Food Services</div>
+          <div class="col-lg-2"></div>
+        </div>
+        </div>
+
+        <div class="row mt-5 mb-5">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <h3> LOCATION MAP </h3>
+            <div 
+            id="map" 
+            style="width: 100%; height: 50vh;border-radius: 5px;"
+            >
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+
+        <div class="row mt-5 bg-dark" style="height: 25vh;">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 text-light"><h3 class="mt-1"> Contact </h3></div>
+          <div class="col-lg-1"></div>
+        </div>
+    </div>
+  
+    <script src="mapBox.js"></script>
 </body>
 </html>

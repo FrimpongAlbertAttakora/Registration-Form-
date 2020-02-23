@@ -1,4 +1,4 @@
-
+// For Student list
 var trial = document.getElementById('try');
 
 var ourRequest = new XMLHttpRequest();
@@ -11,25 +11,8 @@ ourRequest.onload = function(){
 };
 ourRequest.send();
 
-
 function renderHTML(data){
     var names = ""; 
-    /*
-    data.forEach(student => {
-        names += '<h3>' + student.name +' '+ student.program +' '+ student.telNumber +' '+ '</h3>' + '<hr>';
-    });
-    */
-   
-    /*
-    data.forEach(student => {
-        names += `
-            <p> ${student.name} </p>
-            <p> ${student.email} </p>
-            <p> ${student.program} </p>
-        `;
-    });
-    */
-
     data.forEach(student => {
         names += 
             '<p>' + student.name + '</p>'
@@ -37,7 +20,10 @@ function renderHTML(data){
            + '<p>' + student.program + '</p>'
         ;
     });
-
     trial.innerHTML = names;
 }
+
+
+
+
 

@@ -14,7 +14,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 
 // Serving static folder
-app.use(express.static(path.join(__dirname, 'public'))); 
+app.use(express.static(path.join(__dirname, 'public'),{
+    extensions: ['html', 'htm'],
+})); 
 
 // Students API Routes
 app.use('/api/students', require('./routes/students'));

@@ -12,7 +12,7 @@ const StudentSchema = mongoose.Schema({
     program: {
         type: String,
         require: true
-    },/*
+    },
     telNumber: {
         type: String,
         require: true
@@ -36,7 +36,7 @@ const StudentSchema = mongoose.Schema({
     date: {
         type: Date,
         default: Date.now
-    },  */
+    }
 });
 
 module.exports = mongoose.model('JecadoStudents', StudentSchema);

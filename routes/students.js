@@ -21,6 +21,11 @@ router.post('/', async (req, res) => {
         name: req.body.name,
         email: req.body.email,
         program: req.body.program,
+        telNumber: req.body.telNumber,
+        gaudianName: req.body.gaudianName,
+        gaudianPhoneNumber: req.body.gaudianPhoneNumber,
+        year: req.body.year,
+        houseNumber: req.body.houseNumber
     });
     try{
     const savedStudent = await student.save();

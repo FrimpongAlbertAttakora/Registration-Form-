@@ -14,7 +14,7 @@ const StudentSchema = mongoose.Schema({
         require: true
     },
     telNumber: {
-        type: String,
+        type: Number,
         require: true
     },
     gaudianName: {
@@ -22,11 +22,11 @@ const StudentSchema = mongoose.Schema({
         require: true
     },
     gaudianPhoneNumber: {
-        type: String,
+        type: Number,
         require: true
     },
     year: {
-        type: String,
+        type: Number,
         require: true
     },
     houseNumber: {

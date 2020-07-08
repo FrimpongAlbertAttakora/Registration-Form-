@@ -26,7 +26,7 @@ const StudentSchema = mongoose.Schema({
         require: true
     },
     year: {
-        type: Number,
+        type: [String, Number],
         require: true
     },
     houseNumber: {
